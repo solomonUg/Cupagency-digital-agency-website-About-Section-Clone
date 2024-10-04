@@ -581,12 +581,13 @@ nav .logo {
     border: 2px solid #ea580c;
     color: #ea580c;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: white;
-    padding: 12px 103px;
+    padding: 12px 88px;
     margin-bottom: 5px;
     font-weight: 500;
     border-radius: 5px;
+    width: 95%;
 }
 .plan-btn:hover{
     background-color: #000000;
