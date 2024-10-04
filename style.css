@@ -31,8 +31,7 @@ nav {
     position: sticky;
     top: 0px;
     width: 100%;
-    transition: all 0.5s ease-in-out;
-    
+    /* transition: all 1s ease-in-out; */
 }
 
 .scroll-effect {
@@ -42,16 +41,15 @@ nav {
 
 .nav-bar-dropdown {
     display: none;
-    /* position: absolute;  */
+    position: absolute; 
     top: 55px;
-    transition: all 0.5s ease-in-out;
-
-    /* transform: translateY(10px); */
 }
 
 .nav-dropdown {
     display: flex;
     flex-direction: column;
+    gap: 0;
+    display: none;
 
 }
 
@@ -61,12 +59,16 @@ nav {
     justify-content: center;
     flex-direction: column;
 }
+.dropdown-links li {
+    margin: 5px 0;
+}
 
 .dropdown-links li a {
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
+
 .dropdown-links li a:hover {
     color: #ea580c;
 }
@@ -348,7 +350,6 @@ nav .logo {
     align-items: center;
     background-color: #feeeee;
     width: 100%;
-    /* padding: 50px; */
     text-align: center;
 
 }
@@ -357,7 +358,7 @@ nav .logo {
 .our-team .our-team-container {
     width: 78%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     align-items: center;
     margin-bottom: 80px;    
@@ -432,8 +433,9 @@ nav .logo {
     display: flex;
     width: 80%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 100px 0;
+    gap: 30px;
 }
 
 .testim-card-container .testi-card {
@@ -506,9 +508,10 @@ nav .logo {
 .plan .plans-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 100px 0;
-    width: 83%;
+    width: 80%;
+    gap: 30px;
 }
 
 .plan-card {
@@ -535,7 +538,6 @@ nav .logo {
 
 .personal {
     font-size: 22px;
-    /* letter-spacing: 1px; */
 }
 
 .monthly {
@@ -693,6 +695,27 @@ width: 84%;
 }
 
 
+@media screen and (min-width: 1026px) and (max-width: 1150px) {
+
+    .awards-numbers{
+        font-size: 2.5rem;
+        margin: 0 10px;
+
+    }
+
+    .our-team .our-team-container {
+        width: 80%;
+        gap: 10px;
+    }
+
+    .dev-card {
+        padding: 5px 20px;
+
+    }
+    
+}
+
+
 
 @media screen and (max-width: 1023px) {
     .letsTalk-btn {
@@ -701,6 +724,10 @@ width: 84%;
 
 .nav-bar-dropdown {
     display: none;
+}
+
+.nav-dropdown {
+    display: flex;
 }
 
     .links {
@@ -804,6 +831,7 @@ width: 84%;
     }
 
 }
+
 
 
 @media screen and (max-width: 580px) {
